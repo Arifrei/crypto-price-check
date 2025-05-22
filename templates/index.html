@@ -29,9 +29,11 @@
                             </div>
                         </form>
 
+                        {% if price or more_info: %}
                         <div class="text-center mt-4">
                             <img src="{{ image }}" alt="Coin Logo" width="64" height="64">
                         </div>
+                        {% endif %}
 
                         {% if price %}
                         <div class="alert alert-success mt-4 text-center" role="alert">
